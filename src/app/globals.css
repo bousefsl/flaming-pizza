@@ -33,6 +33,10 @@
 
   /* ... FP Black */
   --color-fp-black: #221919;
+
+  /*Fonts*/
+  --font-anton: var(--font-anton-sans);
+  --font-gvibes: var(--font-great-vibes);
 }
 
 body {
