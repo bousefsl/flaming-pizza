@@ -1,15 +1,22 @@
+//Next
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+//Fonts
+import { Anton, Great_Vibes } from "next/font/google"
+//Styles
 import "./globals.css"
+//Components
+import NavBar from "@/components/global/NavBar"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const antonSans = Anton({
+  variable: "--font-anton-sans",
   subsets: ["latin"],
+  weight: "400",
 })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const greatVibes = Great_Vibes({
+  variable: "--font-great-vibes",
   subsets: ["latin"],
+  weight: "400",
 })
 
 export const metadata: Metadata = {
@@ -24,7 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${antonSans.variable} ${greatVibes.variable} antialiased`}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   )
 }
