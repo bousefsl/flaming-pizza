@@ -6,6 +6,7 @@ import { Anton, Great_Vibes } from "next/font/google"
 import "./globals.css"
 //Components
 import NavBar from "@/components/global/NavBar"
+import Footer from "@/components/global/Footer"
 
 const antonSans = Anton({
   variable: "--font-anton-sans",
@@ -32,8 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${antonSans.variable} ${greatVibes.variable} antialiased`}>
-        <NavBar />
-        {children}
+        {/*Necessary for footer to stick to the bottom*/}
+        <div className="min-h-screen flex flex-col">
+          <NavBar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   )
