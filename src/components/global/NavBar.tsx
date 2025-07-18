@@ -12,6 +12,7 @@ import NavBarMenuBtn from "./NavBarMenuBtn"
 import NavBarMenu from "./NavBarMenu"
 import NavBarMenuItem from "./NavBarMenuItem"
 import { Button } from "./CTAs"
+import RedLine from "./RedLine"
 
 export default function NavBar() {
   const [mobMenuIsOpen, setMobMenuIsOpen] = useState(true)
@@ -59,7 +60,7 @@ export default function NavBar() {
       {/*Mobile Menu*/}
       <NavBarMenu mobMenuIsOpen={mobMenuIsOpen} navbarNav={navbarNav} />
       {/*Bottom Red Line*/}
-      <div className="h-3 bg-primary-700">&nbsp;</div>
+      <RedLine />
     </nav>
   )
 }
