@@ -1,4 +1,6 @@
+//Components
 import HeroBanner from "@/components/HeroBanner"
+import PizzaSizesList from "@/components/PizzaSizesList"
 import TopFlamersList from "@/components/TopFlamersList"
 
 export default function HomePage() {
@@ -6,23 +8,7 @@ export default function HomePage() {
     <div className="home">
       <HeroBanner />
       <TopFlamersList />
-
-      <div className="container mx-auto">
-        <h1>Homepage</h1>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-      </div>
+      <PizzaSizesList />
     </div>
   )
 }

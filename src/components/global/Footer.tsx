@@ -25,7 +25,7 @@ export default function Footer() {
   ]
 
   return (
-    <section className="footer pt-12 mt-auto">
+    <section className="footer mt-auto">
       {/* "mt-auto" - Necessary for footer to stick to the bottom*/}
       <div className="border-t-2 border-fp-yellow">
         <div className="bg-linear-to-b from-primary-950 to-fp-black border-t-12 border-primary-700">
