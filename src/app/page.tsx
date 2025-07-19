@@ -1,11 +1,11 @@
 import HeroBanner from "@/components/HeroBanner"
+import TopFlamersList from "@/components/TopFlamersList"
 
 export default function HomePage() {
   return (
     <div className="home">
-      <div className="max-h-150 block">
-        <HeroBanner />
-      </div>
+      <HeroBanner />
+      <TopFlamersList />
 
       <div className="container mx-auto">
         <h1>Homepage</h1>
