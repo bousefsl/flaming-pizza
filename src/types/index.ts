@@ -29,3 +29,12 @@ export type PizzaItemProps = {
   heatImg: string | StaticImageData
   buttonText: string
 }
+
+//Pizza Size Card
+export type PizzaSizeProps = {
+  id: number
+  size: string
+  cost: number
+  baseSize: number
+  pizzastyleList: string[]
+}
