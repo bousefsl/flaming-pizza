@@ -12,7 +12,7 @@ export default async function PizzaList() {
             Our pizza <span className="font-gvibes text-4xl sm:text-6xl text-fp-yellow">Menu</span>
           </h2>
         </div>
-        <div className="flex flex-wrap justify-evenly mb-8">
+        <div className="flex flex-wrap sm:justify-between lg:justify-evenly mb-8">
           {pizzas.map((pizza) => {
             return <PizzaItem key={pizza.id} {...pizza} />
           })}

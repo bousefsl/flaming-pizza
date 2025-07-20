@@ -37,6 +37,18 @@
   /*Fonts*/
   --font-anton: var(--font-anton-sans);
   --font-gvibes: var(--font-great-vibes);
+
+  /*Animation*/
+  --animate-skeleton: skeleton 1s ease-in-out;
+
+  @keyframes skeleton {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 body {
@@ -48,4 +60,9 @@ body {
 .hero-img {
   @apply absolute top-0 left-0 w-full h-full object-cover;
   z-index: -1;
+}
+
+.skeleton + .skeleton {
+  margin-top: 0.5rem;
+  width: 100%;
 }
