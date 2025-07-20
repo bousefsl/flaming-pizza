@@ -18,7 +18,7 @@ export default function NavBar() {
   const [mobMenuIsOpen, setMobMenuIsOpen] = useState(true)
 
   const navbarNav = [
-    { linkId: 1, linkTo: "#", linkTarget: "", linkRel: "", linkContent: "View Pizzas" },
+    { linkId: 1, linkTo: "/pizzas", linkTarget: "", linkRel: "", linkContent: "View Pizzas" },
     { linkId: 2, linkTo: "#", linkTarget: "", linkRel: "", linkContent: "Contact Us" },
     { linkId: 3, linkTo: "#", linkTarget: "", linkRel: "", linkContent: "About Us" },
   ]

@@ -20,7 +20,6 @@ export default function TopFlamersList() {
       content: "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       heatContent: "Medium",
       heatImg: Heat2,
-      buttonText: "View pizza",
     },
     {
       id: 2,
@@ -29,7 +28,6 @@ export default function TopFlamersList() {
       content: "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       heatContent: "Mild",
       heatImg: Heat1,
-      buttonText: "View pizza",
     },
     {
       id: 3,
@@ -38,7 +36,6 @@ export default function TopFlamersList() {
       content: "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       heatContent: "Scorchio",
       heatImg: Heat4,
-      buttonText: "View pizza",
     },
     {
       id: 4,
@@ -47,7 +44,6 @@ export default function TopFlamersList() {
       content: "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       heatContent: "Hot",
       heatImg: Heat3,
-      buttonText: "View pizza",
     },
   ]
 

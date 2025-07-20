@@ -21,13 +21,13 @@ export type ButtonProps = {
 
 //Pizza Item
 export type PizzaItemProps = {
-  id?: number
+  id: number
   image: string | StaticImageData
   title: string
   content: string
   heatContent: string
   heatImg: string | StaticImageData
-  buttonText: string
+  blurHash?: string
 }
 
 //Pizza Size Card

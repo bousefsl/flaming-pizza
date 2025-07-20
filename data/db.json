@@ -1,0 +1,202 @@
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "image": "/pizza1.jpg",
+      "title": "Tomatolivo flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Medium",
+      "heatImg": "/heat2.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 2,
+      "image": "/pizza2.jpg",
+      "title": "Oh-So-Chorizo flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Mild",
+      "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 3,
+      "image": "/pizza3.jpg",
+      "title": "'Meat sweats' flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Scorchio",
+      "heatImg": "/heat4.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 4,
+      "image": "/pizza4.jpg",
+      "title": "Pear-ific flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Mild",
+      "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 5,
+      "image": "/pizza5.jpg",
+      "title": "V-egg-ie Plant pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "No",
+      "heatImg": "/heat0.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 6,
+      "image": "/pizza6.jpg",
+      "title": "Spicy Chicken flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Hot",
+      "heatImg": "/heat3.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 7,
+      "image": "/pizza7.jpg",
+      "title": "Simply Tomato flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Mild",
+      "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 8,
+      "image": "/pizza8.jpg",
+      "title": "'Sweet'-corn flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Mild",
+      "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 9,
+      "image": "/pizza9.jpg",
+      "title": "Pine-Ham-pple pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "No",
+      "heatImg": "/heat0.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 10,
+      "image": "/pizza10.jpg",
+      "title": "Mayo-livo flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Medium",
+      "heatImg": "/heat2.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 11,
+      "image": "/pizza11.jpg",
+      "title": "Ch-easy Honey flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Mild",
+      "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 12,
+      "image": "/pizza12.jpg",
+      "title": "Veg supremo flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Mild",
+      "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 13,
+      "image": "/pizza3.jpg",
+      "title": "'Meat sweats' flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Scorchio",
+      "heatImg": "/heat4.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 14,
+      "image": "/pizza4.jpg",
+      "title": "Pear-ific flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Mild",
+      "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 15,
+      "image": "/pizza5.jpg",
+      "title": "V-egg-ie Plant pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "No",
+      "heatImg": "/heat0.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 16,
+      "image": "/pizza6.jpg",
+      "title": "Spicy Chicken flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Hot",
+      "heatImg": "/heat3.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 17,
+      "image": "/pizza7.jpg",
+      "title": "Simply Tomato flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Mild",
+      "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 18,
+      "image": "/pizza8.jpg",
+      "title": "'Sweet'-corn flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Mild",
+      "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 19,
+      "image": "/pizza9.jpg",
+      "title": "Pine-Ham-pple pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "No",
+      "heatImg": "/heat0.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 20,
+      "image": "/pizza10.jpg",
+      "title": "Mayo-livo flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Medium",
+      "heatImg": "/heat2.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 21,
+      "image": "/pizza11.jpg",
+      "title": "Ch-easy Honey flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Mild",
+      "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": 22,
+      "image": "/pizza12.jpg",
+      "title": "Veg supremo flame-baked pizza",
+      "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
+      "heatContent": "Mild",
+      "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    }
+  ]
+}
