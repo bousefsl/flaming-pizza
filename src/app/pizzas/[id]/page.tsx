@@ -2,10 +2,22 @@
 import { Suspense, use } from "react"
 //Next
 import Image from "next/image"
+import { Metadata } from "next"
 //API
 import { getPizza } from "@/api/pizzas"
 //Components
 import { ButtonLink } from "@/components/global/CTAs"
+
+//Metadata
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params
+  const pizza = await getPizza(id)
+
+  return {
+    title: `Flaming Pizza | ${pizza.title}`,
+    description: pizza.content,
+  }
+}
 
 export default function PizzaPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params)
