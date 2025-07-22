@@ -1,7 +1,15 @@
+//Next
+import { Metadata } from "next"
 //API
 import { getPizzas } from "@/api/pizzas"
 //Components
 import PizzaItem from "@/components/PizzaItem"
+
+//Metadata
+export const metadata: Metadata = {
+  title: "Flaming Pizza | Pizza Menu",
+  description: "NextJS Demo | Mock Pizza website | Our pizza menu",
+}
 
 export default async function PizzaList() {
   const pizzas = await getPizzas()
