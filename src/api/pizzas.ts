@@ -2,7 +2,17 @@
 import { PizzaItemProps } from "@/types"
 
 export async function getPizzas() {
-  return fetch(`${process.env.API_URL}/pizzas`)
+  return fetch(`${process.env.API_URL}/pizzas`, {
+    next: {
+      revalidate: 600,
+    },
+  })
     .then((res) => res.json())
     .then((data) => data as PizzaItemProps[])
+}
+
+export async function getPizza(id: string) {
+  return fetch(`${process.env.API_URL}/pizzas/${id}`)
+    .then((res) => res.json())
+    .then((data) => data as PizzaItemProps)
 }

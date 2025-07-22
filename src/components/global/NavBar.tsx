@@ -38,7 +38,7 @@ export default function NavBar() {
           <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
             <div className="flex shrink-0 items-center md:mr-auto">
               <Link href="/" className="my-4">
-                <Image src={FPLogo} alt="Flaming Pizza" className="h-16 md:h-20 lg:h-22 w-auto" priority />
+                <Image src={FPLogo} alt="Flaming Pizza" className="h-16 md:h-20 lg:h-22 w-auto" priority={true} />
               </Link>
             </div>
             <div className="hidden md:ml-6 md:flex items-center mr-5">

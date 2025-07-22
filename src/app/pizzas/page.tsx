@@ -1,4 +1,6 @@
+//API
 import { getPizzas } from "@/api/pizzas"
+//Components
 import PizzaItem from "@/components/PizzaItem"
 
 export default async function PizzaList() {

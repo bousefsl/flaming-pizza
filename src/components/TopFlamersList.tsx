@@ -14,7 +14,7 @@ import Heat4 from "../assets/images/heat4.png"
 export default function TopFlamersList() {
   const topFlamerProducts = [
     {
-      id: 1,
+      id: "tomatolivo-flame-baked-pizza",
       image: Pizza1,
       title: "Tomatolivo flame-baked Pizza",
       content: "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
@@ -22,7 +22,7 @@ export default function TopFlamersList() {
       heatImg: Heat2,
     },
     {
-      id: 2,
+      id: "oh-so-chorizo-flame-baked-pizza",
       image: Pizza2,
       title: "Oh-So-Chorizo flame-baked Pizza",
       content: "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
@@ -30,7 +30,7 @@ export default function TopFlamersList() {
       heatImg: Heat1,
     },
     {
-      id: 3,
+      id: "meat-sweats-flame-baked-pizza",
       image: Pizza3,
       title: "Meat sweats flame-baked Pizza",
       content: "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
@@ -38,7 +38,7 @@ export default function TopFlamersList() {
       heatImg: Heat4,
     },
     {
-      id: 4,
+      id: "pear-ific-flame-baked-pizza",
       image: Pizza4,
       title: "Pear & Honey flame-baked Pizza",
       content: "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",

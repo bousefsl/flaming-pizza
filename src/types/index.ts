@@ -13,18 +13,28 @@ export type LinkProps = {
 
 export type ButtonProps = {
   children: React.ReactNode
-  variant?: string
   disabled?: boolean
   id?: string
   otherClasses?: string
 }
 
+export type ButtonLinkProps = {
+  linkId?: number
+  linkTo: string
+  linkClass?: string
+  linkTarget?: string
+  linkRel?: string //"noreferrer"
+  children: React.ReactNode
+}
+
 //Pizza Item
 export type PizzaItemProps = {
-  id: number
+  id: string
   image: string | StaticImageData
   title: string
   content: string
+  content2?: string
+  toppings?: string[]
   heatContent: string
   heatImg: string | StaticImageData
   blurHash?: string

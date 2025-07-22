@@ -3,9 +3,9 @@ import Image from "next/image"
 //Types
 import { PizzaItemProps } from "@/types"
 //Components
-import { Button } from "./global/CTAs"
+import { ButtonLink } from "./global/CTAs"
 
-export default function PizzaItem({ image, title, content, heatContent, heatImg, blurHash }: PizzaItemProps) {
+export default function PizzaItem({ id, image, title, content, heatContent, heatImg, blurHash }: PizzaItemProps) {
   return (
     <div className="pizza-card mb-12 grow-0 shrink-0 w-full sm:w-[48%] lg:w-[23%]">
       <div className="flex flex-col h-full">
@@ -27,7 +27,7 @@ export default function PizzaItem({ image, title, content, heatContent, heatImg,
           </div>
         </div>
         <div className="text-center mt-auto">
-          <Button>View pizza</Button>
+          <ButtonLink linkTo={`/pizzas/${id}`}>View pizza</ButtonLink>
         </div>
       </div>
     </div>
