@@ -3,6 +3,7 @@ import { Suspense, use } from "react"
 //Next
 import Image from "next/image"
 import { Metadata } from "next"
+import { notFound } from "next/navigation"
 //API
 import { getPizza } from "@/api/pizzas"
 //Components
@@ -11,7 +12,7 @@ import { ButtonLink } from "@/components/global/CTAs"
 //Metadata
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params
-  const pizza = await getPizza(id)
+  const pizza = await fetch(`${process.env.API_URL}/pizzas/${id}`).then((res) => res.json())
 
   return {
     title: `Flaming Pizza | ${pizza.title}`,
@@ -44,6 +45,8 @@ export default function PizzaPage({ params }: { params: Promise<{ id: string }> 
 
 function PizzaDetails({ id }: { id: string }) {
   const pizza = use(getPizza(id))
+
+  if (pizza == undefined) return notFound()
 
   return (
     <div className="hero-banner">

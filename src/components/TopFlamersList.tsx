@@ -5,10 +5,8 @@ import Pizza1 from "../assets/images/pizza1.jpg"
 import Pizza2 from "../assets/images/pizza2.jpg"
 import Pizza3 from "../assets/images/pizza3.jpg"
 import Pizza4 from "../assets/images/pizza4.jpg"
-import Heat0 from "../assets/images/heat0.png"
 import Heat1 from "../assets/images/heat1.png"
 import Heat2 from "../assets/images/heat2.png"
-import Heat3 from "../assets/images/heat3.png"
 import Heat4 from "../assets/images/heat4.png"
 
 export default function TopFlamersList() {
@@ -32,7 +30,7 @@ export default function TopFlamersList() {
     {
       id: "meat-sweats-flame-baked-pizza",
       image: Pizza3,
-      title: "Meat sweats flame-baked Pizza",
+      title: "'Meat sweats' flame-baked pizza",
       content: "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       heatContent: "Scorchio",
       heatImg: Heat4,
@@ -40,10 +38,10 @@ export default function TopFlamersList() {
     {
       id: "pear-ific-flame-baked-pizza",
       image: Pizza4,
-      title: "Pear & Honey flame-baked Pizza",
+      title: "Pear-ific flame-baked pizza",
       content: "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
-      heatContent: "Hot",
-      heatImg: Heat3,
+      heatContent: "Mild",
+      heatImg: Heat1,
     },
   ]
 
