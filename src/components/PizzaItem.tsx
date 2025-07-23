@@ -1,10 +1,10 @@
 //Next
 import Image from "next/image"
+import Link from "next/link"
 //Types
 import { PizzaItemProps } from "@/types"
 //Components
 import { ButtonLink } from "./global/CTAs"
-import Link from "next/link"
 
 export default function PizzaItem({ id, image, title, content, heatContent, heatImg, blurHash }: PizzaItemProps) {
   return (

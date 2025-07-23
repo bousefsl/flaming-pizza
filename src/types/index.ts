@@ -2,12 +2,12 @@ import { StaticImageData } from "next/image"
 
 //CTAs
 export type LinkProps = {
-  linkId: number
+  linkId?: number
   linkTo: string
   linkClass?: string
   linkTarget?: string
   linkRel?: string //"noreferrer"
-  linkContent: string
+  linkContent?: string
   children?: React.ReactNode
 }
 
@@ -25,6 +25,14 @@ export type ButtonLinkProps = {
   linkTarget?: string
   linkRel?: string //"noreferrer"
   children: React.ReactNode
+}
+
+export type SocialMediaLinkProps = {
+  linkTo: string
+  linkClass?: string
+  linkAriaLabel: string
+  iconName: string
+  iconClass?: string
 }
 
 //Pizza Item

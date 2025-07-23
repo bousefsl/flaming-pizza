@@ -37,6 +37,7 @@
   /*Fonts*/
   --font-anton: var(--font-anton-sans);
   --font-gvibes: var(--font-great-vibes);
+  --font-fpicons: var(--font-fp-icons);
 
   /*Animation*/
   --animate-skeleton: skeleton 0.5s ease-in-out;
@@ -68,4 +69,69 @@ body {
 .skeleton + .skeleton {
   margin-top: 0.5rem;
   width: 100%;
+}
+
+/*Icons*/
+[class^="icon-fp"],
+[class*=" icon-fp"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "fpIcons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  cursor: pointer;
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fp-notification:before {
+  content: "\e9bb";
+}
+.icon-fp-open-in-new:before {
+  content: "\e9b1";
+}
+.icon-fp-arrow-back:before {
+  content: "\e916";
+}
+.icon-fp-arrow-downward:before {
+  content: "\e934";
+}
+.icon-fp-arrow-forward:before {
+  content: "\e93c";
+}
+.icon-fp-arrow-upward:before {
+  content: "\e94e";
+}
+.icon-fp-notification-important:before {
+  content: "\e90f";
+}
+.icon-fp-remove:before {
+  content: "\e931";
+}
+.icon-fp-alert-outline:before {
+  content: "\e96d";
+}
+.icon-fp-youtube-circle:before {
+  content: "\e91a";
+}
+.icon-fp-facebook-circle:before {
+  content: "\e91c";
+}
+.icon-fp-linked-in:before {
+  content: "\e91d";
+}
+.icon-fp-twitter-circle:before {
+  content: "\e91e";
 }

@@ -2,6 +2,9 @@
 import Image from "next/image"
 //Images
 import FPLogo from "../../assets/images/fp-logo.png"
+//Components
+import SocialMediaLink from "./SocialMediaLink"
+import { Anchor } from "./CTAs"
 
 export default function Footer() {
   const footerNav = [
@@ -17,11 +20,18 @@ export default function Footer() {
       title: "Sit dolor amet",
       items: [
         { linkId: 4, linkTo: "#", linkTarget: "", linkRel: "", linkContent: "Lorem ipsum dolor" },
-        { linkId: 5, linkTo: "#", linkTarget: "", linkRel: "", linkContent: "Duis aute irure" },
-        { linkId: 6, linkTo: "#", linkTarget: "", linkRel: "", linkContent: "Excepteur sint" },
+        { linkId: 5, linkTo: "#", linkTarget: "_blank", linkRel: "noreferrer", linkContent: "Duis aute irure" },
+        { linkId: 6, linkTo: "#", linkTarget: "_blank", linkRel: "noreferrer", linkContent: "Excepteur sint" },
         { linkId: 7, linkTo: "#", linkTarget: "", linkRel: "", linkContent: "Ut enim ad minim" },
       ],
     },
+  ]
+
+  const SocialMediaNav = [
+    { linkTo: "#", linkClass: "", linkAriaLabel: "Visit us on Facebook", iconName: "facebook-circle", iconClass: "text-4xl" },
+    { linkTo: "#", linkClass: "", linkAriaLabel: "Visit us on Youtube", iconName: "youtube-circle", iconClass: "text-4xl" },
+    { linkTo: "#", linkClass: "", linkAriaLabel: "Visit us on Linked-in", iconName: "linked-in", iconClass: "text-4xl" },
+    { linkTo: "#", linkClass: "", linkAriaLabel: "Visit us on Twitter", iconName: "twitter-circle", iconClass: "text-4xl" },
   ]
 
   return (
@@ -38,7 +48,13 @@ export default function Footer() {
                       <p className="font-anton text-fp-light-yellow text-xl mb-2">{section.title}</p>
                       <ul className="link-outside">
                         {section.items.map((item) => {
-                          return <li key={item.linkId}>{item.linkContent}</li>
+                          return (
+                            <li key={item.linkId}>
+                              <Anchor linkTo={item.linkTo} linkTarget={item.linkTarget} linkRel={item.linkRel}>
+                                {item.linkContent}
+                              </Anchor>
+                            </li>
+                          )
                         })}
                       </ul>
                     </div>
@@ -46,7 +62,20 @@ export default function Footer() {
                 })}
               </div>
               <div>
-                <p className="font-anton text-fp-light-yellow text-xl mb-6">Follows us at: {/* Todo: Add icon & links */}</p>
+                <div className="font-anton text-fp-light-yellow text-xl mb-6">
+                  <div>
+                    <span className="mr-2 mb-2 block sm:inline-block">Follows us at:</span>
+                    <ul className="block sm:inline">
+                      {SocialMediaNav.map((item, index) => {
+                        return (
+                          <li key={index} className="inline mr-1">
+                            <SocialMediaLink {...item} />
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="w-full md:w-1/2">
