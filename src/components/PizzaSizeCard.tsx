@@ -24,7 +24,7 @@ export default function PizzaSizeCard({ size, cost, baseSize, pizzastyleList }: 
         <div className="pc-card-body mb-8 px-8">
           <div className="flex flex-nowrap justify-center font-anton text-5xl mb-6">
             <span className="text-6xl">{baseSize}</span>
-            <span className="text-2xl pl-1">"</span>
+            <span className="text-2xl pl-1">&rdquo;</span>
             <div className="flex flex-nowrap mt-auto pb-0.25 pl-3">base</div>
           </div>
           <div>

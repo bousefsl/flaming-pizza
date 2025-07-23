@@ -12,7 +12,7 @@ export async function getPizzas() {
 }
 
 export async function getPizza(id: string) {
-  return fetch(`${process.env.API_URL}/pizzas/${id}`)
-    .then((res) => res.json())
-    .then((data) => data as PizzaItemProps)
+  const res = await fetch(`${process.env.API_URL}/pizzas/${id}`)
+  if (!res.ok) return undefined
+  return res.json().then((data) => data as PizzaItemProps)
 }
