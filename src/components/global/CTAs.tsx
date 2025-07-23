@@ -30,7 +30,7 @@ export function ButtonLink({ linkTo, linkTarget, linkRel, linkClass, children }:
       {/* Accessibility: Adds icon at the end to signify it opens in a new window plus text to be read by screenreader */}
       {linkTarget === "_blank" ? (
         <>
-          <i aria-hidden="true" className="icon-hs-open-in-new ml-2 inline-block"></i>
+          <i aria-hidden="true" className="icon-fp-open-in-new ml-2 inline-block"></i>
           <span className="visually-hidden"> opens a new window</span>
         </>
       ) : (
@@ -43,13 +43,13 @@ export function ButtonLink({ linkTo, linkTarget, linkRel, linkClass, children }:
 //Anchor/Text Link
 export function Anchor({ linkTo, linkTarget, linkRel, linkClass, children }: LinkProps) {
   return (
-    <Link href={linkTo} target={linkTarget} rel={linkRel} className={linkClass}>
+    <Link href={linkTo} target={linkTarget} rel={linkRel} className={`underline decoration-dotted underline-offset-2 hover:text-fp-light-yellow hover:no-underline ${linkClass}`}>
       {children}
       {/* Accessibility: Adds icon at the end to signify it opens in a new window plus text to be read by screenreader */}
       {linkTarget === "_blank" ? (
         <>
-          <i aria-hidden="true" className="icon-hs-open-in-new ml-2 inline-block"></i>
-          <span className="visually-hidden"> opens a new window</span>
+          <i aria-hidden="true" className="icon-fp-open-in-new ml-2 inline-block"></i>
+          <span className="sr-only"> opens a new window</span>
         </>
       ) : (
         <></>

@@ -1,5 +1,6 @@
 //Next
 import type { Metadata } from "next"
+import localFont from "next/font/local"
 //Fonts
 import { Anton, Great_Vibes } from "next/font/google"
 //Styles
@@ -18,6 +19,11 @@ const greatVibes = Great_Vibes({
   variable: "--font-great-vibes",
   subsets: ["latin"],
   weight: "400",
+})
+
+const fpIcons = localFont({
+  src: "../assets/fonts/fp-icons.woff",
+  variable: "--font-fp-icons",
 })
 
 export const metadata: Metadata = {
