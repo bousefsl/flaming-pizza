@@ -11,7 +11,7 @@ import FPLogo from "../../assets/images/fp-logo.png"
 import NavBarMenuBtn from "./NavBarMenuBtn"
 import NavBarMenu from "./NavBarMenu"
 import NavBarMenuItem from "./NavBarMenuItem"
-import { Button } from "./CTAs"
+import { ButtonLink } from "./CTAs"
 import RedLine from "./RedLine"
 
 export default function NavBar() {
@@ -51,7 +51,7 @@ export default function NavBar() {
           </div>
           <div className="relative ml-3">
             <div>
-              <Button>Account</Button>
+              <ButtonLink linkTo="/create-pizza">Create Pizza</ButtonLink>
             </div>
           </div>
         </div>
