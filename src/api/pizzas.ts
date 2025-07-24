@@ -4,7 +4,7 @@ import { PizzaItemProps } from "@/types"
 export async function getPizzas() {
   return fetch(`${process.env.API_URL}/pizzas`, {
     next: {
-      revalidate: 600,
+      revalidate: 0,
     },
   })
     .then((res) => res.json())
