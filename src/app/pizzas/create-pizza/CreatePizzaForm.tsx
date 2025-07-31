@@ -6,17 +6,22 @@ import Form from "next/form"
 import { Button } from "@/components/global/CTAs"
 //Actions
 import { createPizza } from "../actions"
+//Hooks
+import { useActionState } from "react"
 
 export default function CreatePizzaForm() {
+  const [state, formAction, isPending] = useActionState(createPizza, {})
+
   return (
-    <Form action={createPizza} className="my-8" formEncType="multipart/form-data">
+    <Form action={formAction} className="my-8" formEncType="multipart/form-data">
       <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-6">
         <div className="col-span-full">
           <label htmlFor="title" className="block text-lg/6 font-medium">
             Pizza name
           </label>
           <div className="mt-2">
-            <input id="title" name="title" required className="block w-1/2 bg-white rounded-md py-2 pl-3 pr-10 text-base text-gray-900 placeholder:text-gray-400 focus:outline-primary-300" placeholder="e.g. Tomato flame-baked pizza" />
+            <input id="title" name="title" required defaultValue={state.title} className="block w-1/2 bg-white rounded-md py-2 pl-3 pr-10 text-base text-gray-900 placeholder:text-gray-400 focus:outline-primary-300" placeholder="e.g. Tomato flame-baked pizza" />
+            {state.errors?.title && <p className="text-sm text-red-500">{state.errors.title}</p>}
           </div>
         </div>
 
@@ -25,7 +30,8 @@ export default function CreatePizzaForm() {
             Pizza image
           </label>
           <div className="mt-2">
-            <input type="file" accept=".jpg, .jpeg" id="image" name="image" required className="block w-1/2 bg-white rounded-md py-1 pl-1 pr-10 text-base text-gray-900  focus:outline-primary-300 file:bg-linear-to-b file:from-primary-700 file:to-primary-800 file:text-white file:px-7 file:py-1.5 file:text-md file:border-2 file:border-primary-200 file:rounded-xl file:cursor-pointer hover:file:from-primary-900 hover:file:to-primary-950 hover:file:text-fp-light-yellow" />
+            <input type="file" accept=".jpg, .jpeg" id="image" name="image" required defaultValue={state.image} className="block w-1/2 bg-white rounded-md py-1 pl-1 pr-10 text-base text-gray-900  focus:outline-primary-300 file:bg-linear-to-b file:from-primary-700 file:to-primary-800 file:text-white file:px-7 file:py-1.5 file:text-md file:border-2 file:border-primary-200 file:rounded-xl file:cursor-pointer hover:file:from-primary-900 hover:file:to-primary-950 hover:file:text-fp-light-yellow" />
+            {state.errors?.image && <p className="text-sm text-red-500">{state.errors.image}</p>}
           </div>
         </div>
 
@@ -34,7 +40,8 @@ export default function CreatePizzaForm() {
             Pizza description 1
           </label>
           <div className="mt-2">
-            <textarea id="content" name="content" rows={3} required className="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-300"></textarea>
+            <textarea id="content" name="content" rows={3} required defaultValue={state.content} className="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-300"></textarea>
+            {state.errors?.content && <p className="text-sm text-red-500">{state.errors.content}</p>}
           </div>
         </div>
 
@@ -43,7 +50,8 @@ export default function CreatePizzaForm() {
             Pizza description 2
           </label>
           <div className="mt-2">
-            <textarea id="content2" name="content2" rows={3} required className="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-300"></textarea>
+            <textarea id="content2" name="content2" rows={3} required defaultValue={state.content2} className="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-300"></textarea>
+            {state.errors?.content2 && <p className="text-sm text-red-500">{state.errors.content2}</p>}
           </div>
         </div>
       </div>
@@ -90,6 +98,7 @@ export default function CreatePizzaForm() {
             </label>
           </div>
         </div>
+        {state.errors?.heatContent && <p className="text-sm text-red-500">{state.errors.heatContent}</p>}
       </div>
 
       <p className="block text-lg/6 font-medium mt-8 mb-2">Please select all pizza toppings</p>
@@ -134,9 +143,10 @@ export default function CreatePizzaForm() {
               </label>
             </div>
           </div> */}
+        {state.errors?.toppings && <p className="text-sm text-red-500">{state.errors.toppings}</p>}
       </div>
       <div className="mt-8 text-center">
-        <Button>Create pizza</Button>
+        <Button disabled={isPending}>{isPending ? "Creating..." : "Create pizza"}</Button>
       </div>
     </Form>
   )
