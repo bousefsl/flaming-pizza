@@ -9,7 +9,7 @@ import { createPizza } from "../actions"
 
 export default function CreatePizzaForm() {
   return (
-    <Form action={createPizza} className="my-8">
+    <Form action={createPizza} className="my-8" formEncType="multipart/form-data">
       <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-6">
         <div className="col-span-full">
           <label htmlFor="title" className="block text-lg/6 font-medium">
@@ -17,6 +17,15 @@ export default function CreatePizzaForm() {
           </label>
           <div className="mt-2">
             <input id="title" name="title" required className="block w-1/2 bg-white rounded-md py-2 pl-3 pr-10 text-base text-gray-900 placeholder:text-gray-400 focus:outline-primary-300" placeholder="e.g. Tomato flame-baked pizza" />
+          </div>
+        </div>
+
+        <div className="col-span-full">
+          <label htmlFor="image" className="block text-lg/6 font-medium">
+            Pizza image
+          </label>
+          <div className="mt-2">
+            <input type="file" accept=".jpg, .jpeg" id="image" name="image" required className="block w-1/2 bg-white rounded-md py-1 pl-1 pr-10 text-base text-gray-900  focus:outline-primary-300 file:bg-linear-to-b file:from-primary-700 file:to-primary-800 file:text-white file:px-7 file:py-1.5 file:text-md file:border-2 file:border-primary-200 file:rounded-xl file:cursor-pointer hover:file:from-primary-900 hover:file:to-primary-950 hover:file:text-fp-light-yellow" />
           </div>
         </div>
 
