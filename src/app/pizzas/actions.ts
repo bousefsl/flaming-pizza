@@ -11,7 +11,10 @@ export async function createPizza(formData: FormData) {
   const idtemp = formData.get("title") as string
   const id = kebabCase(idtemp)
 
-  const image = "/pizza11.jpg"
+  //const imageTemp = formData.get("image") as File
+  //const image = `/${imageTemp.name}`
+  const image = "/pizza13.jpg" //Temporary due to being unable to upload images locally
+
   const title = formData.get("title") as string
   const content = formData.get("content") as string
   const content2 = formData.get("content2") as string
@@ -28,17 +31,18 @@ export async function createPizza(formData: FormData) {
   //Set the pizza object to add to our data
   const pizza = { id, image, title, content, content2, toppings, heatContent, heatImg, blurHash }
 
-  const res = await fetch("http://localhost:3001/pizzas", {
+  await fetch("http://localhost:3001/pizzas", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(pizza),
   })
-
-  const json = await res.json()
-
-  if (json.error) {
-    console.log(json.error.message)
-  }
+    .then((res) => res.json())
+    .then((res) => {
+      console.log("Added pizza success:", res)
+    })
+    .catch((err) => {
+      console.error("Error:", err)
+    })
 
   revalidatePath("/pizzas")
   redirect("/pizzas")
