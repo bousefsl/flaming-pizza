@@ -1,4 +1,4 @@
-interface CustomTextArea extends React.HTMLProps<HTMLTextAreaElement> {
+interface CustomTextAreaProps extends React.HTMLProps<HTMLTextAreaElement> {
   label: string
   name: string
   rows: number
@@ -6,7 +6,7 @@ interface CustomTextArea extends React.HTMLProps<HTMLTextAreaElement> {
   defaultValue?: string | undefined
 }
 
-export default function CustomTextArea({ label, name, rows, otherClasses = "", defaultValue }: CustomTextArea) {
+export default function CustomTextArea({ label, name, rows, otherClasses = "", defaultValue }: CustomTextAreaProps) {
   return (
     <>
       <label htmlFor={name} className="block text-lg/6 font-medium">
