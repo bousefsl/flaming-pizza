@@ -5,6 +5,7 @@ import Form from "next/form"
 //Components
 import { Button } from "@/components/global/CTAs"
 import CustomInput from "@/components/forms/CustomInput"
+import CustomTextArea from "@/components/forms/CustomTextArea"
 import FormError from "@/components/forms/FormError"
 //Actions
 import { createPizza } from "../actions"
@@ -23,33 +24,18 @@ export default function CreatePizzaForm() {
         </div>
 
         <div className="col-span-full">
-          <label htmlFor="image" className="block text-lg/6 font-medium">
-            Pizza image
-          </label>
-          <div className="mt-2">
-            <input type="file" accept=".jpg, .jpeg" id="image" name="image" required defaultValue={state.image} className="block w-1/2 bg-white rounded-md py-1 pl-1 pr-10 text-base text-gray-900  focus:outline-primary-300 file:bg-linear-to-b file:from-primary-700 file:to-primary-800 file:text-white file:px-7 file:py-1.5 file:text-md file:border-2 file:border-primary-200 file:rounded-xl file:cursor-pointer hover:file:from-primary-900 hover:file:to-primary-950 hover:file:text-fp-light-yellow" />
-            {state.errors?.image && <p className="text-sm text-red-500">{state.errors.image}</p>}
-          </div>
+          <CustomInput type="file" accept=".jpg, .jpeg" label="Pizza image" name="image" required defaultValue={state.image} otherClasses="file:bg-linear-to-b file:from-primary-700 file:to-primary-800 file:text-white file:px-7 file:py-1.5 file:text-md file:border-2 file:border-primary-200 file:rounded-xl file:cursor-pointer hover:file:from-primary-900 hover:file:to-primary-950 hover:file:text-fp-light-yellow" />
+          {state.errors?.image && <FormError error={state.errors.image} />}
         </div>
 
         <div className="sm:col-span-3">
-          <label htmlFor="content" className="block text-lg/6 font-medium">
-            Pizza description 1
-          </label>
-          <div className="mt-2">
-            <textarea id="content" name="content" rows={3} required defaultValue={state.content} className="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-300"></textarea>
-            {state.errors?.content && <p className="text-sm text-red-500">{state.errors.content}</p>}
-          </div>
+          <CustomTextArea label="Pizza description 1" name="content" rows={3} required defaultValue={state.content} />
+          {state.errors?.content && <FormError error={state.errors.content} />}
         </div>
 
         <div className="sm:col-span-3">
-          <label htmlFor="content2" className="block text-lg/6 font-medium">
-            Pizza description 2
-          </label>
-          <div className="mt-2">
-            <textarea id="content2" name="content2" rows={3} required defaultValue={state.content2} className="block w-full rounded-md bg-white px-3 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary-300"></textarea>
-            {state.errors?.content2 && <p className="text-sm text-red-500">{state.errors.content2}</p>}
-          </div>
+          <CustomTextArea label="Pizza description 2" name="content2" rows={3} required defaultValue={state.content2} />
+          {state.errors?.content2 && <FormError error={state.errors.content2} />}
         </div>
       </div>
 
