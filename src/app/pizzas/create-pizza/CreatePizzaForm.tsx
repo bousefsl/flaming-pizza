@@ -4,6 +4,8 @@
 import Form from "next/form"
 //Components
 import { Button } from "@/components/global/CTAs"
+import CustomInput from "@/components/forms/CustomInput"
+import FormError from "@/components/forms/FormError"
 //Actions
 import { createPizza } from "../actions"
 //Hooks
@@ -16,13 +18,8 @@ export default function CreatePizzaForm() {
     <Form action={formAction} className="my-8" formEncType="multipart/form-data">
       <div className="grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-6">
         <div className="col-span-full">
-          <label htmlFor="title" className="block text-lg/6 font-medium">
-            Pizza name
-          </label>
-          <div className="mt-2">
-            <input id="title" name="title" required defaultValue={state.title} className="block w-1/2 bg-white rounded-md py-2 pl-3 pr-10 text-base text-gray-900 placeholder:text-gray-400 focus:outline-primary-300" placeholder="e.g. Tomato flame-baked pizza" />
-            {state.errors?.title && <p className="text-sm text-red-500">{state.errors.title}</p>}
-          </div>
+          <CustomInput label="Pizza name" name="title" required defaultValue={state.title} placeholder="e.g. Tomatolivo flame-baked pizza" />
+          {state.errors?.title && <FormError error={state.errors.title} />}
         </div>
 
         <div className="col-span-full">
