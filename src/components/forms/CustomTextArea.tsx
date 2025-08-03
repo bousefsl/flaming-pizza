@@ -1,10 +1,5 @@
-interface CustomTextAreaProps extends React.HTMLProps<HTMLTextAreaElement> {
-  label: string
-  name: string
-  rows: number
-  otherClasses?: string
-  defaultValue?: string | undefined
-}
+//Types
+import { CustomTextAreaProps } from "@/types"
 
 export default function CustomTextArea({ label, name, rows, otherClasses = "", defaultValue }: CustomTextAreaProps) {
   return (

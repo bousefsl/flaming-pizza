@@ -83,7 +83,7 @@
       "title": "'Sweet'-corn flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Roast Chicken", "Sweetcorn", "Broccoli", "Onion", "Mushrooms", "Mozzarella", "Chives", "Mixed Herbs"],
+      "toppings": ["Roast Chicken", "Sweetcorn", "Broccoli", "Spanish Onion", "Mushrooms", "Mozzarella", "Chives", "Mixed Herbs"],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -127,7 +127,7 @@
       "title": "Veg supremo flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Tomato Slices", "Green Peppers", "Red Peppers", "Black Olives", "Mushrooms", "Sweetcorn", "Onion", "Red Onion", "Sesame Seeds"],
+      "toppings": ["Tomato Slices", "Green Peppers", "Red Peppers", "Black Olives", "Mushrooms", "Sweetcorn", "Spanish Onion", "Red Onion", "Sesame Seeds"],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -237,7 +237,7 @@
       "title": "Veg supremo flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Tomato Slices", "Green Peppers", "Red Peppers", "Black Olives", "Mushrooms", "Sweetcorn", "Onion", "Red Onion", "Sesame Seeds"],
+      "toppings": ["Tomato Slices", "Green Peppers", "Red Peppers", "Black Olives", "Mushrooms", "Sweetcorn", "Spanish Onion", "Red Onion", "Sesame Seeds"],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
