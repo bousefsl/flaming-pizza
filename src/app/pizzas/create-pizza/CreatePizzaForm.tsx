@@ -7,11 +7,12 @@ import { Button } from "@/components/global/CTAs"
 import CustomInput from "@/components/forms/CustomInput"
 import CustomTextArea from "@/components/forms/CustomTextArea"
 import FormError from "@/components/forms/FormError"
+import CustomRadioBtn from "@/components/forms/CustomRadioBtn"
+import CustomCheckbox from "@/components/forms/CustomCheckbox"
 //Actions
 import { createPizza } from "../actions"
 //Hooks
-import { useActionState } from "react"
-import CustomRadioBtn from "@/components/forms/CustomRadioBtn"
+import { Fragment, useActionState } from "react"
 
 export default function CreatePizzaForm() {
   const [state, formAction, isPending] = useActionState(createPizza, {})
@@ -22,6 +23,64 @@ export default function CreatePizzaForm() {
     { id: 3, heatId: "2", heatLabel: "Medium" },
     { id: 4, heatId: "3", heatLabel: "Hot" },
     { id: 5, heatId: "4", heatLabel: "Scorchio" },
+  ]
+
+  const CheckboxList = [
+    {
+      title: "Meats",
+      items: [
+        { id: 1, label: "Spicy BBQ Chicken" },
+        { id: 2, label: "BBQ Chicken" },
+        { id: 3, label: "Roast Chicken" },
+        { id: 4, label: "Nduja Sausage" },
+        { id: 5, label: "Bacon" },
+        { id: 6, label: "Salami" },
+        { id: 7, label: "Chorizo" },
+        { id: 8, label: "Anchovies" },
+        { id: 9, label: "Crab Meat" },
+        { id: 10, label: "Spicy Ground Beef" },
+      ],
+    },
+    {
+      title: "Fruit/Greens",
+      items: [
+        { id: 1, label: "Spicy Cauliflower" },
+        { id: 2, label: "Green Peppers" },
+        { id: 3, label: "Red Peppers" },
+        { id: 4, label: "Yellow Peppers" },
+        { id: 5, label: "Spanish Onion" },
+        { id: 6, label: "Red Onion" },
+        { id: 7, label: "Jalapeños" },
+        { id: 8, label: "Rocket Salad" },
+        { id: 9, label: "Arugula" },
+        { id: 10, label: "Green Olives" },
+        { id: 11, label: "Black Olives" },
+        { id: 12, label: "Tomato Slices" },
+        { id: 13, label: "Pineapple" },
+        { id: 14, label: "Sweetcorn" },
+        { id: 15, label: "Mushrooms" },
+        { id: 16, label: "Celery" },
+        { id: 17, label: "Pear Slices" },
+        { id: 18, label: "Aubergine Slices" },
+      ],
+    },
+    {
+      title: "Spices/Condiments",
+      items: [
+        { id: 1, label: "Chives" },
+        { id: 2, label: "Parsley" },
+        { id: 3, label: "Chilli Flakes" },
+        { id: 4, label: "Cayenne Pepper" },
+        { id: 5, label: "Carolina Reaper Flakes" },
+      ],
+    },
+    {
+      title: "Other/Misc",
+      items: [
+        { id: 1, label: "Mozzarella" },
+        { id: 2, label: "Fried Egg" },
+      ],
+    },
   ]
 
   return (
@@ -57,52 +116,29 @@ export default function CreatePizzaForm() {
             </div>
           )
         })}
-        {state.errors?.heatContent && <p className="text-sm text-red-500">{state.errors.heatContent}</p>}
+        {state.errors?.heatContent && <FormError error={state.errors.heatContent} />}
       </div>
 
       <p className="block text-lg/6 font-medium mt-8 mb-2">Please select all pizza toppings</p>
       <div className="grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6">
-        <div className="sm:col-span-3 lg:col-span-2">
-          <div className="border border-gray-200 rounded-sm dark:border-gray-700 pt-2.5 pb-1 px-2">
-            <input id="mozzarella-checkbox" type="checkbox" name="toppings" value="Mozzarella" className="w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label htmlFor="mozzarella-checkbox" className="w-full py-4 text-md font-medium">
-              <span className="ml-2 inline-flex align-top">Mozzarella</span>
-            </label>
-          </div>
-        </div>
-        <div className="sm:col-span-3 lg:col-span-2">
-          <div className="border border-gray-200 rounded-sm dark:border-gray-700 pt-2.5 pb-1 px-2">
-            <input id="spicy-cauliflower-checkbox" type="checkbox" name="toppings" value="Spicy Cauliflower" className="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label htmlFor="spicy-cauliflower-checkbox" className="w-full py-4 text-md font-medium">
-              <span className="ml-2 inline-flex align-top">Spicy Cauliflower</span>
-            </label>
-          </div>
-        </div>
-        <div className="sm:col-span-3 lg:col-span-2">
-          <div className="border border-gray-200 rounded-sm dark:border-gray-700 pt-2.5 pb-1 px-2">
-            <input id="green-peppers-checkbox" type="checkbox" name="toppings" value="Green Peppers" className="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-            <label htmlFor="green-peppers-checkbox" className="w-full py-4 text-md font-medium">
-              <span className="ml-2 inline-flex align-top">Green Peppers</span>
-            </label>
-          </div>
-        </div>
-        {/* <div className="sm:col-span-3 lg:col-span-2">
-            <div className="border border-gray-200 rounded-sm dark:border-gray-700 pt-2.5 pb-1 px-2">
-              <input id="red-peppers-checkbox" type="checkbox" name="toppings" required value="Red Peppers" className="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-              <label htmlFor="red-peppers-checkbox" className="w-full py-4 text-md font-medium">
-                <span className="ml-2 inline-flex align-top">Red Peppers</span>
-              </label>
-            </div>
-          </div>
-          <div className="sm:col-span-3 lg:col-span-2">
-            <div className="border border-gray-200 rounded-sm dark:border-gray-700 pt-2.5 pb-1 px-2">
-              <input id="yellow-peppers-checkbox" type="checkbox" name="toppings" required value="Yellow Peppers" className="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-              <label htmlFor="yellow-peppers-checkbox" className="w-full py-4 text-md font-medium">
-                <span className="ml-2 inline-flex align-top">Yellow Peppers</span>
-              </label>
-            </div>
-          </div> */}
-        {state.errors?.toppings && <p className="text-sm text-red-500">{state.errors.toppings}</p>}
+        {CheckboxList.map((checkboxItem, index) => {
+          return (
+            <Fragment key={index}>
+              <div className="col-span-full">
+                <p>{checkboxItem.title}</p>
+              </div>
+
+              {checkboxItem.items.map((item) => {
+                return (
+                  <div key={item.id} className="sm:col-span-3 xl:col-span-2">
+                    <CustomCheckbox name="toppings" label={item.label} />
+                  </div>
+                )
+              })}
+            </Fragment>
+          )
+        })}
+        {state.errors?.toppings && <FormError error={state.errors.toppings} />}
       </div>
       <div className="mt-8 text-center">
         <Button disabled={isPending}>{isPending ? "Creating..." : "Create pizza"}</Button>

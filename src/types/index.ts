@@ -1,4 +1,7 @@
+//Next
 import { StaticImageData } from "next/image"
+//React
+import { HTMLInputTypeAttribute } from "react"
 
 //CTAs
 export type LinkProps = {
@@ -55,4 +58,40 @@ export type PizzaSizeProps = {
   cost: number
   baseSize: number
   pizzastyleList: string[]
+}
+
+//Form elements
+//--Input
+export interface CustomInputProps extends React.HTMLProps<HTMLInputElement> {
+  label: string
+  name: string
+  type?: HTMLInputTypeAttribute
+  otherClasses?: string
+  defaultValue?: string | undefined
+  placeholder?: string
+}
+
+//--Textarea
+export interface CustomTextAreaProps extends React.HTMLProps<HTMLTextAreaElement> {
+  label: string
+  name: string
+  rows: number
+  otherClasses?: string
+  defaultValue?: string | undefined
+}
+
+//--Radio Button
+export type CustomRadioBtnProps = {
+  id: number
+  heatLabel: string
+  heatId: string
+  name: string
+  defaultChecked?: boolean | undefined
+  required?: boolean
+}
+
+//--Checkbox
+export type CustomCheckboxProps = {
+  label: string
+  name: string
 }
