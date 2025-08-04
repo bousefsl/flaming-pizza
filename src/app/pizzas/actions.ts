@@ -7,33 +7,18 @@ import { redirect } from "next/navigation"
 import { kebabCase } from "lodash"
 //Zod (Thid Party)
 import { z } from "zod"
+//Types
+import { CreatePizzaActionState } from "@/types"
 
 //Zod Schema
 const CreatePizzaSchema = z.object({
   title: z.string().trim().min(1, { message: "The pizza title is required" }),
   image: z.string(),
-  content: z.string().trim().min(1, { message: "The pizza introduction content is required" }),
-  content2: z.string().trim().min(1, { message: "The pizza further content is required" }),
-  heatContent: z.string(),
-  toppings: z.array(z.string()).min(2, { message: "Please enter at least 2 pizza toppings" }),
+  content: z.string().trim().min(1, { message: "An introduction for the new pizza is required" }),
+  content2: z.string().trim().min(1, { message: "Further content for the new pizza is required" }),
+  heatContent: z.string().min(1, { message: "Please select a pizza heat level" }),
+  toppings: z.array(z.string()).min(2, { message: "Please select at least 2 pizza toppings" }),
 })
-
-type CreatePizzaActionState = {
-  title?: string
-  image?: string
-  content?: string
-  content2?: string
-  heatContent?: string
-  toppings?: string[]
-  errors?: {
-    title?: string[]
-    image?: string[]
-    content?: string[]
-    content2?: string[]
-    heatContent?: string[]
-    toppings?: string[]
-  }
-}
 
 export async function createPizza(previousState: CreatePizzaActionState, formData: FormData): Promise<CreatePizzaActionState> {
   //Get the "title" value and set the id to the title in "kebab-case" (from Lodash "https://lodash.com/docs/4.17.15#kebabCase" )

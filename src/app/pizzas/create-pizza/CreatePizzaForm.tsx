@@ -13,9 +13,15 @@ import CustomCheckbox from "@/components/forms/CustomCheckbox"
 import { createPizza } from "../actions"
 //Hooks
 import { Fragment, useActionState } from "react"
+import { CreatePizzaActionState } from "@/types"
+
+const initialState: CreatePizzaActionState = {
+  //Initialise the "heat level" radio group's "checked" value
+  heatContent: "None",
+}
 
 export default function CreatePizzaForm() {
-  const [state, formAction, isPending] = useActionState(createPizza, {})
+  const [state, formAction, isPending] = useActionState(createPizza, initialState)
 
   const RadioBtnsList = [
     { id: 1, heatId: "0", heatLabel: "None" },
@@ -93,7 +99,7 @@ export default function CreatePizzaForm() {
 
         <div className="col-span-full">
           <CustomInput type="file" accept=".jpg, .jpeg" label="Pizza image" name="image" required defaultValue={state.image} otherClasses="file:bg-linear-to-b file:from-primary-700 file:to-primary-800 file:text-white file:px-7 file:py-1.5 file:text-md file:border-2 file:border-primary-200 file:rounded-xl file:cursor-pointer hover:file:from-primary-900 hover:file:to-primary-950 hover:file:text-fp-light-yellow" />
-          {state.errors?.image && <FormError error={state.errors.image} />}
+          {/* {state.errors?.image && <FormError error={state.errors.image} />} */}
         </div>
 
         <div className="sm:col-span-3">
@@ -112,11 +118,10 @@ export default function CreatePizzaForm() {
         {RadioBtnsList.map((radioBtn) => {
           return (
             <div key={radioBtn.id} className="sm:col-span-2">
-              <CustomRadioBtn name="heatContent" {...radioBtn} required={true} />
+              <CustomRadioBtn name="heatContent" {...radioBtn} required={true} defaultChecked={state.heatContent === radioBtn.heatLabel ? true : false} />
             </div>
           )
         })}
-        {state.errors?.heatContent && <FormError error={state.errors.heatContent} />}
       </div>
 
       <p className="block text-lg/6 font-medium mt-8 mb-2">Please select all pizza toppings</p>
@@ -131,14 +136,23 @@ export default function CreatePizzaForm() {
               {checkboxItem.items.map((item) => {
                 return (
                   <div key={item.id} className="sm:col-span-3 xl:col-span-2">
-                    <CustomCheckbox name="toppings" label={item.label} />
+                    <CustomCheckbox name="toppings" label={item.label} defaultChecked={state.toppings?.includes(item.label)} />
                   </div>
                 )
               })}
             </Fragment>
           )
         })}
-        {state.errors?.toppings && <FormError error={state.errors.toppings} />}
+        <div className="col-span-full">{state.errors?.toppings && <FormError error={state.errors.toppings} />}</div>
+      </div>
+      <div>
+        {state?.errors ? (
+          <p className="text-md text-red-500" aria-live="polite">
+            There is a problem with the details you have entered, please try again. Thank you
+          </p>
+        ) : (
+          ""
+        )}
       </div>
       <div className="mt-8 text-center">
         <Button disabled={isPending}>{isPending ? "Creating..." : "Create pizza"}</Button>

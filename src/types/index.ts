@@ -1,7 +1,7 @@
 //Next
 import { StaticImageData } from "next/image"
 //React
-import { HTMLInputTypeAttribute } from "react"
+import { ChangeEvent, HTMLInputTypeAttribute } from "react"
 
 //CTAs
 export type LinkProps = {
@@ -94,4 +94,23 @@ export type CustomRadioBtnProps = {
 export type CustomCheckboxProps = {
   label: string
   name: string
+  defaultChecked?: boolean | undefined
+}
+
+//Create Pizza form "initialState"
+export type CreatePizzaActionState = {
+  title?: string
+  image?: string
+  content?: string
+  content2?: string
+  heatContent?: string
+  toppings?: string[]
+  errors?: {
+    title?: string[]
+    // image?: string[]
+    content?: string[]
+    content2?: string[]
+    // heatContent?: string[]
+    toppings?: string[]
+  }
 }
