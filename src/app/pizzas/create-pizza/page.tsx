@@ -1,5 +1,11 @@
 //Form component
+import { Metadata } from "next"
 import CreatePizzaForm from "./CreatePizzaForm"
+
+export const metadata: Metadata = {
+  title: "Flaming Pizza | Create a pizza",
+  description: "NextJS Demo | Mock Pizza website | Create a pizza to add to our menu",
+}
 
 export default function CreatePizzaPage() {
   return (
