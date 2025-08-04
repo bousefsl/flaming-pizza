@@ -1,9 +1,19 @@
+"use client"
+
 //Types
 import { PizzaSizeProps } from "@/types"
+//React
+import { useRef } from "react"
+//Motion
+import { useInView } from "motion/react"
 
 export default function PizzaSizeCard({ size, cost, baseSize, pizzastyleList }: PizzaSizeProps) {
+  //Motion (animation)
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, amount: 0 })
+
   return (
-    <div className="pizza-size-card mb-12 grow-0 shrink-0 w-full sm:w-[48%] lg:w-[23%]">
+    <div className={`pizza-size-card mb-12 grow-0 shrink-0 w-full sm:w-[48%] lg:w-[23%] opacity-0 transition-all duration-500 blur-sm translate-y-16 ease-out nth-1:delay-0 nth-2:delay-200 nth-3:delay-400 nth-4:delay-600 ${isInView ? "opacity-100! blur-none! translate-y-0!" : ""}`} ref={ref}>
       <div className="bg-linear-to-b from-primary-950 to-fp-black pb-4 rounded-2xl h-full">
         <div className="ps-card-header flex flex-nowrap justify-between mb-6">
           <div className="pt-8 pl-8 pr-2 w-2/3">
