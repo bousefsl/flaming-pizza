@@ -99,6 +99,8 @@ export type CustomCheckboxProps = {
 
 //Create Pizza form "initialState"
 export type CreatePizzaActionState = {
+  successState: boolean
+  message: string
   title?: string
   image?: string
   content?: string

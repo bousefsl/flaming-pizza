@@ -11,13 +11,16 @@ import CustomRadioBtn from "@/components/forms/CustomRadioBtn"
 import CustomCheckbox from "@/components/forms/CustomCheckbox"
 //Actions
 import { createPizza } from "../actions"
-//Hooks
+//React/Hooks
 import { Fragment, useActionState } from "react"
+//Types
 import { CreatePizzaActionState } from "@/types"
 
 const initialState: CreatePizzaActionState = {
   //Initialise the "heat level" radio group's "checked" value
   heatContent: "None",
+  successState: false,
+  message: "",
 }
 
 export default function CreatePizzaForm() {
@@ -145,15 +148,7 @@ export default function CreatePizzaForm() {
         })}
         <div className="col-span-full">{state.errors?.toppings && <FormError error={state.errors.toppings} />}</div>
       </div>
-      <div>
-        {state?.errors ? (
-          <p className="text-md text-red-500" aria-live="polite">
-            There is a problem with the details you have entered, please try again. Thank you
-          </p>
-        ) : (
-          ""
-        )}
-      </div>
+      <div>{state?.errors ? <FormError error={state.message} /> : ""}</div>
       <div className="mt-8 text-center">
         <Button disabled={isPending}>{isPending ? "Creating..." : "Create pizza"}</Button>
       </div>

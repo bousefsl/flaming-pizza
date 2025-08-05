@@ -21,6 +21,9 @@ const CreatePizzaSchema = z.object({
 })
 
 export async function createPizza(previousState: CreatePizzaActionState, formData: FormData): Promise<CreatePizzaActionState> {
+  // Simulate network delay
+  //await new Promise((resolve) => setTimeout(resolve, 1000))
+
   //Get the "title" value and set the id to the title in "kebab-case" (from Lodash "https://lodash.com/docs/4.17.15#kebabCase" )
   const idtemp = formData.get("title") as string
   const id = kebabCase(idtemp)
@@ -43,7 +46,7 @@ export async function createPizza(previousState: CreatePizzaActionState, formDat
   const blurHash = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
 
   //Set Zod safeParse & error action
-  const validEntries = CreatePizzaSchema.safeParse({
+  const validatedData = CreatePizzaSchema.safeParse({
     title,
     image,
     content,
@@ -52,16 +55,23 @@ export async function createPizza(previousState: CreatePizzaActionState, formDat
     toppings,
   })
 
-  if (!validEntries.success) {
+  if (!validatedData.success) {
     return {
+      successState: false,
+      message: "There is a problem with the details you have entered, please try again. Thank you.",
       title,
       image,
       content,
       content2,
       heatContent,
       toppings,
-      errors: validEntries.error.flatten().fieldErrors,
+      errors: validatedData.error.flatten().fieldErrors,
     }
+  }
+
+  if (validatedData.success) {
+    previousState.successState = true
+    previousState.message = "Success"
   }
 
   //Set the pizza object to add to our data
