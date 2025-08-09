@@ -8,6 +8,8 @@ import "./globals.css"
 //Components
 import NavBar from "@/components/global/NavBar"
 import Footer from "@/components/global/Footer"
+import { Toaster } from "react-hot-toast"
+import Providers from "./providers"
 
 const antonSans = Anton({
   variable: "--font-anton-sans",
@@ -42,7 +44,7 @@ export default function RootLayout({
         {/*Necessary for footer to stick to the bottom*/}
         <div className="min-h-screen flex flex-col">
           <NavBar />
-          {children}
+          <Providers>{children}</Providers>
           <Footer />
         </div>
       </body>
