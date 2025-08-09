@@ -35,7 +35,7 @@ export default function PizzaSizesList() {
 
   return (
     <section className="pizza-sizes">
-      <div className="bg-white py-16">
+      <div className="bg-gray-200 py-16">
         <div className="container mx-auto">
           <div className="text-center mb-8">
             <h2 className="font-anton text-3xl sm:text-5xl text-primary-700">

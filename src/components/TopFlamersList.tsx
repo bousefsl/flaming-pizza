@@ -47,7 +47,7 @@ export default function TopFlamersList() {
 
   return (
     <section className="top-flamers">
-      <div className=" bg-fp-black text-white mb-12">
+      <div className=" bg-fp-black text-white py-16">
         <div className="container mx-auto px-8 lg:px-4 2xl:px-4">
           <div className="text-center mb-8">
             <h2 className="font-anton text-3xl sm:text-5xl text-primary-700">

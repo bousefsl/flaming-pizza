@@ -20,7 +20,7 @@ export default async function PizzaList({ searchParams }: { searchParams: Promis
   return (
     <>
       <ToastAlert state={pizzaState} message={message} />
-      <section className="pizza-list">
+      <section className="pizza-list bg-fp-black">
         <div className="container mx-auto px-8 lg:px-4 2xl:px-4">
           <div className="text-center mt-12 mb-8">
             <h1 className="font-anton text-3xl sm:text-5xl text-primary-700">

@@ -6,7 +6,15 @@
       "title": "Tomatolivo flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Tomato Slices", "Green Olives", "Red Peppers", "Celery", "Chives", "Parsley", "Chilli Flakes"],
+      "toppings": [
+        "Tomato Slices",
+        "Green Olives",
+        "Red Peppers",
+        "Celery",
+        "Chives",
+        "Parsley",
+        "Chilli Flakes"
+      ],
       "heatContent": "Medium",
       "heatImg": "/heat2.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -17,7 +25,13 @@
       "title": "Oh-So-Chorizo flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Chorizo", "Salami", "Arugula", "Red Peppers", "Sweetcorn"],
+      "toppings": [
+        "Chorizo",
+        "Salami",
+        "Arugula",
+        "Red Peppers",
+        "Sweetcorn"
+      ],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -28,7 +42,19 @@
       "title": "'Meat sweats' flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Spicy Ground Beef", "Spicy BBQ Chicken", "Roast Chicken", "Salami", "Chorizo", "Nduja Sausage", "Bacon", "Jalapeños", "Carolina Reaper Flakes", "Chives", "Red Onion"],
+      "toppings": [
+        "Spicy Ground Beef",
+        "Spicy BBQ Chicken",
+        "Roast Chicken",
+        "Salami",
+        "Chorizo",
+        "Nduja Sausage",
+        "Bacon",
+        "Jalapeños",
+        "Carolina Reaper Flakes",
+        "Chives",
+        "Red Onion"
+      ],
       "heatContent": "Scorchio",
       "heatImg": "/heat4.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -39,7 +65,14 @@
       "title": "Pear-ific flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Pear Slices", "Mozzarella", "Pineapple", "Black Olives", "Rocket Salad", "Parsley"],
+      "toppings": [
+        "Pear Slices",
+        "Mozzarella",
+        "Pineapple",
+        "Black Olives",
+        "Rocket Salad",
+        "Parsley"
+      ],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -50,7 +83,15 @@
       "title": "V-egg-ie Plant pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Aubergine Slices", "Tomato Slices", "Mushrooms", "Yellow Peppers", "Red Peppers", "Chives", "Parsley"],
+      "toppings": [
+        "Aubergine Slices",
+        "Tomato Slices",
+        "Mushrooms",
+        "Yellow Peppers",
+        "Red Peppers",
+        "Chives",
+        "Parsley"
+      ],
       "heatContent": "No",
       "heatImg": "/heat0.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -61,7 +102,15 @@
       "title": "Spicy Chicken flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Spicy BBQ Chicken", "Red Onion", "Yellow Peppers", "Chives", "Parsley", "Rocket Salad", "Cayenne Pepper"],
+      "toppings": [
+        "Spicy BBQ Chicken",
+        "Red Onion",
+        "Yellow Peppers",
+        "Chives",
+        "Parsley",
+        "Rocket Salad",
+        "Cayenne Pepper"
+      ],
       "heatContent": "Hot",
       "heatImg": "/heat3.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -72,7 +121,12 @@
       "title": "Simply Tomato flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Tomato Slices", "Chives", "Parsley", "Mixed Herbs"],
+      "toppings": [
+        "Tomato Slices",
+        "Chives",
+        "Parsley",
+        "Mixed Herbs"
+      ],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -83,7 +137,16 @@
       "title": "'Sweet'-corn flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Roast Chicken", "Sweetcorn", "Broccoli", "Spanish Onion", "Mushrooms", "Mozzarella", "Chives", "Mixed Herbs"],
+      "toppings": [
+        "Roast Chicken",
+        "Sweetcorn",
+        "Broccoli",
+        "Spanish Onion",
+        "Mushrooms",
+        "Mozzarella",
+        "Chives",
+        "Mixed Herbs"
+      ],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -94,7 +157,13 @@
       "title": "Pine-Ham-pple pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Smoked Ham", "Pineapple", "Honey", "Black Olives", "Mixed Herbs"],
+      "toppings": [
+        "Smoked Ham",
+        "Pineapple",
+        "Honey",
+        "Black Olives",
+        "Mixed Herbs"
+      ],
       "heatContent": "No",
       "heatImg": "/heat0.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -105,7 +174,14 @@
       "title": "Mayo-livo flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Roast Chicken", "Black Olives", "Tomato Slices", "Mixed Herbs", "Mayonnaise", "Chives"],
+      "toppings": [
+        "Roast Chicken",
+        "Black Olives",
+        "Tomato Slices",
+        "Mixed Herbs",
+        "Mayonnaise",
+        "Chives"
+      ],
       "heatContent": "Medium",
       "heatImg": "/heat2.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -116,7 +192,11 @@
       "title": "Ch-easy Honey flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Mozzarella", "Spicy Honey", "Spicy BBQ Chicken"],
+      "toppings": [
+        "Mozzarella",
+        "Spicy Honey",
+        "Spicy BBQ Chicken"
+      ],
       "heatContent": "Medium",
       "heatImg": "/heat2.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -127,7 +207,17 @@
       "title": "Veg supremo flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Tomato Slices", "Green Peppers", "Red Peppers", "Black Olives", "Mushrooms", "Sweetcorn", "Spanish Onion", "Red Onion", "Sesame Seeds"],
+      "toppings": [
+        "Tomato Slices",
+        "Green Peppers",
+        "Red Peppers",
+        "Black Olives",
+        "Mushrooms",
+        "Sweetcorn",
+        "Spanish Onion",
+        "Red Onion",
+        "Sesame Seeds"
+      ],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -138,7 +228,19 @@
       "title": "'Meat sweats' flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Spicy Ground Beef", "Spicy BBQ Chicken", "Roast Chicken", "Salami", "Chorizo", "Nduja Sausage", "Bacon", "Jalapeños", "Carolina Reaper Flakes", "Chives", "Red Onion"],
+      "toppings": [
+        "Spicy Ground Beef",
+        "Spicy BBQ Chicken",
+        "Roast Chicken",
+        "Salami",
+        "Chorizo",
+        "Nduja Sausage",
+        "Bacon",
+        "Jalapeños",
+        "Carolina Reaper Flakes",
+        "Chives",
+        "Red Onion"
+      ],
       "heatContent": "Scorchio",
       "heatImg": "/heat4.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -149,7 +251,14 @@
       "title": "Pear-ific flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Pear Slices", "Mozzarella", "Pineapple", "Black Olives", "Rocket Salad", "Parsley"],
+      "toppings": [
+        "Pear Slices",
+        "Mozzarella",
+        "Pineapple",
+        "Black Olives",
+        "Rocket Salad",
+        "Parsley"
+      ],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -160,7 +269,15 @@
       "title": "V-egg-ie Plant pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Aubergine Slices", "Tomato Slices", "Mushrooms", "Yellow Peppers", "Red Peppers", "Chives", "Parsley"],
+      "toppings": [
+        "Aubergine Slices",
+        "Tomato Slices",
+        "Mushrooms",
+        "Yellow Peppers",
+        "Red Peppers",
+        "Chives",
+        "Parsley"
+      ],
       "heatContent": "No",
       "heatImg": "/heat0.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -171,7 +288,15 @@
       "title": "Spicy Chicken flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Spicy BBQ Chicken", "Red Onion", "Yellow Peppers", "Chives", "Parsley", "Rocket Salad", "Cayenne Pepper"],
+      "toppings": [
+        "Spicy BBQ Chicken",
+        "Red Onion",
+        "Yellow Peppers",
+        "Chives",
+        "Parsley",
+        "Rocket Salad",
+        "Cayenne Pepper"
+      ],
       "heatContent": "Hot",
       "heatImg": "/heat3.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -182,7 +307,12 @@
       "title": "Simply Tomato flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Tomato Slices", "Chives", "Parsley", "Mixed Herbs"],
+      "toppings": [
+        "Tomato Slices",
+        "Chives",
+        "Parsley",
+        "Mixed Herbs"
+      ],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -193,7 +323,15 @@
       "title": "'nda-tha-Sea flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Crab Meat", "Anchovies", "Grilled Cod Chunks", "Salmon Chunks", "Broccoli", "Mixed Herbs", "Sweetcorn"],
+      "toppings": [
+        "Crab Meat",
+        "Anchovies",
+        "Grilled Cod Chunks",
+        "Salmon Chunks",
+        "Broccoli",
+        "Mixed Herbs",
+        "Sweetcorn"
+      ],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -204,7 +342,13 @@
       "title": "Pine-Ham-pple pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Smoked Ham", "Pineapple", "Honey", "Black Olives", "Mixed Herbs"],
+      "toppings": [
+        "Smoked Ham",
+        "Pineapple",
+        "Honey",
+        "Black Olives",
+        "Mixed Herbs"
+      ],
       "heatContent": "No",
       "heatImg": "/heat0.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -215,7 +359,14 @@
       "title": "Mayo-livo flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Roast Chicken", "Black Olives", "Tomato Slices", "Mixed Herbs", "Mayonnaise", "Chives"],
+      "toppings": [
+        "Roast Chicken",
+        "Black Olives",
+        "Tomato Slices",
+        "Mixed Herbs",
+        "Mayonnaise",
+        "Chives"
+      ],
       "heatContent": "Medium",
       "heatImg": "/heat2.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -226,7 +377,11 @@
       "title": "Ch-easy Honey flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Mozzarella", "Spicy Honey", "Spicy BBQ Chicken"],
+      "toppings": [
+        "Mozzarella",
+        "Spicy Honey",
+        "Spicy BBQ Chicken"
+      ],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
@@ -237,9 +392,40 @@
       "title": "Veg supremo flame-baked pizza",
       "content": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim!",
       "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis, cum nisi enim! Duis odio ante id rhoncus in cubilia facilisi, faucibus pharetra netus conubia platea nam hac cursus, facilisis justo tristique natoque suspendisse nostra.",
-      "toppings": ["Tomato Slices", "Green Peppers", "Red Peppers", "Black Olives", "Mushrooms", "Sweetcorn", "Spanish Onion", "Red Onion", "Sesame Seeds"],
+      "toppings": [
+        "Tomato Slices",
+        "Green Peppers",
+        "Red Peppers",
+        "Black Olives",
+        "Mushrooms",
+        "Sweetcorn",
+        "Spanish Onion",
+        "Red Onion",
+        "Sesame Seeds"
+      ],
       "heatContent": "Mild",
       "heatImg": "/heat1.png",
+      "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
+    },
+    {
+      "id": "eezy-cheezy-bbq-lickin-flame-baked-pizza",
+      "image": "/pizza13.jpg",
+      "title": "Eezy-Cheezy BBQ-Lickin flame-baked pizza",
+      "content": "Chunky's spicy pizza!",
+      "content2": "Lorem ipsum dolor sit amet consectetur elit. Accusantium voluptas adipisci corporis",
+      "toppings": [
+        "Spicy BBQ Chicken",
+        "Salami",
+        "Chorizo",
+        "Spicy Ground Beef",
+        "Red Peppers",
+        "Spanish Onion",
+        "Chilli Flakes",
+        "Carolina Reaper Flakes",
+        "Mozzarella"
+      ],
+      "heatContent": "Scorchio",
+      "heatImg": "/heat4.png",
       "blurHash": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPcZmJSDwAEZQGf2O6XywAAAABJRU5ErkJggg=="
     }
   ]
