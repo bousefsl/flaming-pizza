@@ -17,8 +17,6 @@ export default function ToastAlert({ state, message }: ToastProps) {
   useEffect(() => {
     if (state === "true") {
       toastNotifySuccess()
-    } else {
-      toastNotifyError()
     }
   }, [])
 

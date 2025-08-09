@@ -3,10 +3,11 @@ import { CustomRadioBtnProps } from "@/types"
 
 export default function CustomRadioBtn({ heatLabel, heatId, name, required, defaultChecked }: CustomRadioBtnProps) {
   return (
-    <div className="border border-gray-200 rounded-sm dark:border-gray-700 pt-2.5 pb-1 px-2">
-      <input id={`${name}-${heatId}`} type="radio" name={name} value={`${heatLabel}${" "}${heatId}`} required={required} defaultChecked={defaultChecked} className="w-5 h-5  text-blue-600 bg-gray-100 border-gray-300 hover:cursor-pointer focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-      <label htmlFor={`${name}-${heatId}`} className="w-full py-4 text-sm font-medium hover:cursor-pointer">
-        <span className="ml-2 inline-flex align-top">{heatLabel}</span>
+    <div className="border-1 border-gray-200 dark:border-gray-700 hover:border-primary-100 hover:cursor-pointer rounded-sm flex items-center gap-2 px-2 py-2">
+      <input id={`${name}-${heatId}`} type="radio" name={name} value={`${heatLabel}${" "}${heatId}`} required={required} defaultChecked={defaultChecked} className="peer relative w-4 h-4 appearance-none shrink-0 border-2 border-gray-400 rounded-full hover:cursor-pointer" />
+      <div className="absolute w-2 h-2 rounded-full peer-checked:bg-blue-500 ml-1" />
+      <label htmlFor={`${name}-${heatId}`} className="w-full text-sm font-medium hover:cursor-pointer">
+        {heatLabel}
       </label>
     </div>
   )

@@ -31,8 +31,10 @@
   --color-fp-yellow: #dcc232;
   --color-fp-light-yellow: #f2eabf;
 
+  --color-fp-gray-500: #8e7264;
   /* ... FP Black */
   --color-fp-black: #221919;
+  --color-fp-blacker: #1a1414;
 
   /*Fonts*/
   --font-anton: var(--font-anton-sans);
