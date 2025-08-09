@@ -71,7 +71,7 @@ export async function createPizza(previousState: CreatePizzaActionState, formDat
 
   if (validatedData.success) {
     previousState.successState = true
-    previousState.message = "Success"
+    previousState.message = "Pizza created successfully!"
   }
 
   //Set the pizza object to add to our data
@@ -91,5 +91,5 @@ export async function createPizza(previousState: CreatePizzaActionState, formDat
     })
 
   revalidatePath("/pizzas")
-  redirect("/pizzas")
+  redirect(`/pizzas?pizzaState=${previousState.successState}&message=${previousState.message}`)
 }
