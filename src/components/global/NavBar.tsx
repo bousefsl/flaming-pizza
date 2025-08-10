@@ -49,10 +49,8 @@ export default function NavBar() {
               </div>
             </div>
           </div>
-          <div className="relative ml-3">
-            <div>
-              <ButtonLink linkTo="/pizzas/create-pizza">Create Pizza</ButtonLink>
-            </div>
+          <div className="relative hidden md:ml-3 md:block">
+            <ButtonLink linkTo="/pizzas/create-pizza">Create Pizza</ButtonLink>
           </div>
         </div>
       </div>

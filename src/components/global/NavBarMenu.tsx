@@ -2,6 +2,7 @@
 import { LinkProps } from "@/types"
 //Components
 import NavBarMenuItem from "./NavBarMenuItem"
+import { ButtonLink } from "./CTAs"
 
 export default function NavBarMenu({ mobMenuIsOpen, navbarNav }: { mobMenuIsOpen: boolean; navbarNav: LinkProps[] }) {
   return (
@@ -12,6 +13,11 @@ export default function NavBarMenu({ mobMenuIsOpen, navbarNav }: { mobMenuIsOpen
           {navbarNav.map((item) => {
             return <NavBarMenuItem key={item.linkId} {...item} linkClass={"block"} />
           })}
+          <div className="mt-8 mb-4 mx-16">
+            <ButtonLink linkTo="/pizzas/create-pizza" linkClass="block">
+              Create Pizza
+            </ButtonLink>
+          </div>
         </div>
       </div>
     </>

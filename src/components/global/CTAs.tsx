@@ -23,7 +23,7 @@ export function ButtonLink({ linkTo, linkTarget, linkRel, linkClass, children }:
       href={linkTo}
       target={linkTarget}
       rel={linkRel}
-      className={`bg-linear-to-b from-primary-700 to-primary-800 px-7 py-2.5 text-md border-2 border-primary-200 rounded-xl cursor-pointer 
+      className={`bg-linear-to-b from-primary-700 to-primary-800 px-7 py-2.5 text-md text-center border-2 border-primary-200 rounded-xl cursor-pointer 
   transition-all ease-in duration-300 text-white hover:from-primary-900 hover:to-primary-950 hover:text-fp-light-yellow ${linkClass}`}
     >
       {children}
