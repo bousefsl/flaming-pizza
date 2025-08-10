@@ -11,9 +11,9 @@ export default function CreatePizzaPage() {
   return (
     <section className="create-pizza">
       <div className="container mx-auto">
-        <div className="my-12 w-full md:w-[85%] lg:w-[75%] mx-auto">
-          <div className="bg-fp-blacker px-16 py-12 rounded-lg">
-            <h1 className="font-anton text-primary-300 text-4xl sm:text-5xl/tight text-center">
+        <div className="w-full md:w-[85%] lg:w-[75%] xl:w-[62%] 2xl:w-[50%] mx-auto my-12">
+          <div className="bg-fp-blacker px-12 sm:px-16 py-12 rounded-lg">
+            <h1 className="font-anton text-primary-300 text-3xl sm:text-4xl/tight text-center">
               Create a <span className="text-white">new pizza</span>
             </h1>
 

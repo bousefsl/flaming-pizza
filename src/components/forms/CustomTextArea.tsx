@@ -4,7 +4,7 @@ import { CustomTextAreaProps } from "@/types"
 export default function CustomTextArea({ label, name, rows, otherClasses = "", defaultValue }: CustomTextAreaProps) {
   return (
     <>
-      <label htmlFor={name} className="block text-lg/6 font-medium">
+      <label htmlFor={name} className="block font-anton text-primary-300 text-xl/6">
         {label}
       </label>
       <div className="mt-2 mb-2">

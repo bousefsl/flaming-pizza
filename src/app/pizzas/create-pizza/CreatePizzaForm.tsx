@@ -116,7 +116,8 @@ export default function CreatePizzaForm() {
         </div>
       </div>
 
-      <p className="block text-lg/6 font-medium mt-8 mb-2">Pizza heat level</p>
+      <p className="font-anton text-primary-300 text-xl/6 mt-8 mb-2">Pizza heat level</p>
+      <p className="mb-4">Please select the heat level of the new pizza.</p>
       <div className="grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6">
         {RadioBtnsList.map((radioBtn) => {
           return (
@@ -127,28 +128,31 @@ export default function CreatePizzaForm() {
         })}
       </div>
 
-      <p className="block text-lg/6 font-medium mt-8 mb-2">Please select all pizza toppings</p>
-      <div className="grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6">
+      <p className="font-anton text-primary-300 text-xl/6 mt-8 mb-4">Please select all pizza toppings</p>
+      <p className="mb-4">Please select all toppings to be added to the new pizza.</p>
+      <div className="grid grid-cols-1 gap-x-6 gap-y-2">
         {CheckboxList.map((checkboxItem, index) => {
           return (
             <Fragment key={index}>
               <div className="col-span-full">
-                <p>{checkboxItem.title}</p>
+                <p className="font-anton text-lg">{checkboxItem.title}</p>
               </div>
 
-              {checkboxItem.items.map((item) => {
-                return (
-                  <div key={item.id} className="sm:col-span-3 xl:col-span-2">
-                    <CustomCheckbox name="toppings" label={item.label} defaultChecked={state.toppings?.includes(item.label)} />
-                  </div>
-                )
-              })}
+              <div className="col-span-full grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6 mb-4 border-1 border-gray-200 dark:border-gray-700 rounded-sm p-2">
+                {checkboxItem.items.map((item) => {
+                  return (
+                    <div key={item.id} className="sm:col-span-3 xl:col-span-2">
+                      <CustomCheckbox name="toppings" label={item.label} defaultChecked={state.toppings?.includes(item.label)} />
+                    </div>
+                  )
+                })}
+              </div>
             </Fragment>
           )
         })}
         <div className="col-span-full">{state.errors?.toppings && <FormError error={state.errors.toppings} />}</div>
       </div>
-      <div>{state?.errors ? <FormError error={state.message} /> : ""}</div>
+      <div>{state?.errors ? <FormError error={state.message} mainerror /> : ""}</div>
       <div className="mt-8 text-center">
         <Button disabled={isPending}>{isPending ? "Creating..." : "Create pizza"}</Button>
       </div>

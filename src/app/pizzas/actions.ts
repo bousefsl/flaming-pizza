@@ -58,7 +58,7 @@ export async function createPizza(previousState: CreatePizzaActionState, formDat
   if (!validatedData.success) {
     return {
       successState: false,
-      message: "There is a problem with the details you have entered, please try again. Thank you.",
+      message: "There is a problem with the details you have entered, please try again.",
       title,
       image,
       content,
