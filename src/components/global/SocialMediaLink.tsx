@@ -7,6 +7,7 @@ export default function SocialMediaLink({ linkTo, linkClass, linkAriaLabel, icon
   return (
     <Link href={linkTo} target="_blank" rel="noreferrer" className={`transition-all duration-200 ease-in text-white hover:text-gray-400 ${linkClass}`} aria-label={linkAriaLabel}>
       <i className={`icon-fp-${iconName} ${iconClass}`}></i>
+      <span className="sr-only"> opens a new window</span>
     </Link>
   )
 }
