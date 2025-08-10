@@ -2,7 +2,7 @@
 
 export default function NavBarMenuBtn({ mobMenuIsOpen, toggleMenu }: { mobMenuIsOpen: boolean; toggleMenu: () => void }) {
   return (
-    <button onClick={toggleMenu} type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
+    <button onClick={toggleMenu} type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
       <span className="absolute -inset-0.5"></span>
       <span className="sr-only">Open main menu</span>
       {/* Icon when menu is closed.

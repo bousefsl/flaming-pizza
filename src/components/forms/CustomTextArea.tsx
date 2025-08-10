@@ -8,7 +8,7 @@ export default function CustomTextArea({ label, name, rows, otherClasses = "", d
         {label}
       </label>
       <div className="mt-2 mb-2">
-        <textarea id={name} name={name} rows={rows} defaultValue={defaultValue} className={`block w-full bg-primary-100 border-2 border-black rounded-md px-3 py-2 text-base text-gray-700 placeholder:text-gray-700 focus:outline-primary-700 ${otherClasses}`}></textarea>
+        <textarea id={name} name={name} rows={rows} defaultValue={defaultValue} className={`block w-full bg-primary-100 border-2 border-black rounded-md px-3 py-2 text-base text-gray-700 placeholder:text-gray-700 focus:outline-primary-700 ${otherClasses}`} aria-describedby={`${name}-error`}></textarea>
       </div>
     </>
   )

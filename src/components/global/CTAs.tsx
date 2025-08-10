@@ -31,7 +31,7 @@ export function ButtonLink({ linkTo, linkTarget, linkRel, linkClass, children }:
       {linkTarget === "_blank" ? (
         <>
           <i aria-hidden="true" className="icon-fp-open-in-new ml-2 inline-block"></i>
-          <span className="visually-hidden"> opens a new window</span>
+          <span className="sr-only"> opens a new window</span>
         </>
       ) : (
         <></>
