@@ -97,7 +97,7 @@ export type CustomCheckboxProps = {
   defaultChecked?: boolean | undefined
 }
 
-//Create Pizza form "initialState"
+//"Create Pizza" form form "initialState"
 export type CreatePizzaActionState = {
   successState: boolean
   message: string
@@ -115,4 +115,10 @@ export type CreatePizzaActionState = {
     // heatContent?: string[]
     toppings?: string[]
   }
+}
+
+//Toast alert
+export type ToastProps = {
+  state: string | undefined
+  message: string | undefined
 }
