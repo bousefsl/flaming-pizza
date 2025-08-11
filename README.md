@@ -1,12 +1,29 @@
-## Learn More
+## "Flaming Pizza" Demo Project (NextJS 15/Typescript/Tailwind 4)
 
-To learn more about Next.js, take a look at the following resources:
+### This is a demo project made for portfolio purposes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project demonstrates a pizza website using the following:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- NextJS 15
+- Typescript
+- Tailwind 4
+- Server actions (useActionState)
+- Zod (Validation)
+- React Hot Toast
+- Loadash
 
-## Deploy on Vercel
+To run the project, please open a terminal and read the json data via JSON-Server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`npx json-server ./data/db.json --port 3001 --host 127.0.0.1`
+
+and `npm run dev` to view in a browser.
+
+## Updates/improvements I intend to make in given time
+
+Given time, there are a number of updates/improvements I would make:
+
+- Add a database & read/write the data from there instead
+- Add "Auth" forms (Login/Signup etc), read/write from a database and protect the "Create form" route if the user has not logged in
+- Add an "Order form" journey
+
+### Thank you

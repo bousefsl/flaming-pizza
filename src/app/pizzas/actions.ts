@@ -5,7 +5,7 @@ import { revalidatePath } from "next/cache"
 import { redirect } from "next/navigation"
 //Lodash (Third Party -- "https://lodash.com")
 import { kebabCase } from "lodash"
-//Zod (Thid Party)
+//Zod (Third Party)
 import { z } from "zod"
 //Types
 import { CreatePizzaActionState } from "@/types"
